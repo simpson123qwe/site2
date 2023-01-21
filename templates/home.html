@@ -1,12 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-Привет    
-</body>
-</html>
+{%extends 'base.html'%}
+{%block title%}отзывы{%endblock title%}
+{%block content%} 
+
+    <form>
+        <!-- <input type="text">
+        <input type="radio">
+        <input type="radio">
+        <input type="submit"> -->
+
+
+
+        <!-- <label for="fname">Имя:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Фамилия:</label><br>
+  <input type="text" id="lname" name="lname">
+  <p><label for="pol">Пол:</label><br></p>
+  <input type="text" id="pol" name="pol">
+  <p><label for="vozrast">Возраст:</label><br></p>
+  <input type="text" id="vozrast" name="vozrast">
+  <p><label for="pochta">Почта:</label><br></p>
+  <input type="text" id="pochta" name="pochta">
+  <p><input type="submit" value="Привет"></p> -->
+
+{{form.as_p}}
+<p><input type="submit" value="Привет"></p>
+    </form>
+    <hr>
+    <p>Имя:{{name}}</p>
+    <p>Фамилия:{{name2}}</p>
+    <p>Пол:{{pol}}</p>
+    <p>Возраст:{{vozrast}}</p>
+    <p>Почта:{{pochta}}</p>
+{%endblock content%}      
+        
+        
+           
